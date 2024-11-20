@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Watch Page</title>
+  <!-- Link to CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <h1>Luxury Watch Collection</h1>
+    <h2>Discover timeless elegance and precision engineering.<h2>
+  </div>
+
+  <!-- Responsive Gallery Section -->
+  <div class="gallery">
+    <figure>
+      <img src="watch1.jpg"width="800px"height="500px" alt="Watch 1">
+      <figcaption><h3>Titan</h3></figcaption>
+    </figure>
+    <figure>
+       <img src="watch2.jpg"width="800px"height="500px"alt="Watch 2">
+       <figcaption><h3>Digital watch</h3></figcaption>
+    </figure>
+    <figure>
+      <img src="watch3.jpg"width="800px"height="500px" alt="Watch 3">
+      <figcaption><h3>Fastrack</h3></figcaption>
+    </figure>
+    
+  </div>
+
+  <!-- Interactive Quiz Section -->
+  <div id="quiz">
+    <p>Find Your Perfect Watch</p>
+    <p>Question 1: What is your preferred style?</p>
+    <button onclick="nextQuestion('Luxury')">Luxury</button>
+    <button onclick="nextQuestion('Sporty')">Sporty</button>
+  </div>
+
+  <!-- Image Carousel Section -->
+  <div class="carousel">
+    <img id="carouselImage" src="watch1.jpg"width="400px"height="400px" alt="Watch Image">
+    <div class="buttons">
+      <button onclick="previousImage()">Previous</button>
+      <button onclick="nextImage()">Next</button>
+    </div>
+  </div>
+
+  <!-- Watch Information Section (API Fetch) -->
+  <div>
+    <h2>Watch Information</h2>
+    <button onclick="fetchWatchData()">Get Watch Details</button>
+    <div id="watchDetails"></div>
+  </div>
+
+  <!-- Link to JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
